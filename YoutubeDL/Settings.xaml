@@ -1,0 +1,57 @@
+﻿<Window x:Name="SettingsScreen" x:Class="DownloaderApp.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DownloaderApp"
+        mc:Ignorable="d"
+        Title="Add Setting" Height="560" Width="660" WindowStartupLocation="CenterScreen" Loaded="SettingsScreen_Loaded" MinWidth="660" MinHeight="560" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+    <Grid RenderTransformOrigin="0.518,0.5">
+
+        <Grid.ColumnDefinitions>
+            <!-- Cols -->
+            <!-- 0 -->
+            <ColumnDefinition Width="20"/>
+            <!-- 1 -->
+            <ColumnDefinition Width="auto"/>
+            <!-- 2 -->
+            <ColumnDefinition Width="*"/>
+            <!-- 4 -->
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="20"/>
+            <!-- 5 -->
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!-- Rows -->
+            <!-- 0 -->
+            <RowDefinition Height="20"/>
+            <!-- 1 -->
+            <RowDefinition Height="Auto"/>
+            <!-- 2 -->
+            <RowDefinition Height="auto"/>
+            <!-- 3 -->
+            <RowDefinition Height="Auto"/>
+            <!-- 4 -->
+            <RowDefinition Height="*"/>
+            <!-- 9 -->
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="4" Margin="0,0,131,439" Grid.RowSpan="3"/>
+
+        <Grid Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="6">
+            <WrapPanel VerticalAlignment="Center" Margin="0,10,0,22"/>
+            <TextBlock Margin="14,32,0,0" Text="Command " TextAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbNewSettingCommand" Margin="77,32,100,0" />
+            <TextBlock Margin="37,1,0,0" Text="Name " TextAlignment="Right" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbNewSettingName" Margin="77,1,100,31" />
+            <Button x:Name="btnOK" Content="OK" Width="53" Height="30" Click="btnOK_Click" Margin="0,10,19,10" HorizontalAlignment="Right"/>
+        </Grid>
+
+        <TextBox Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="Add your own settings to the Saved Settings list.&#xA;After adding your setting, you can check it by double-clicking its name in the main form.&#xA;Documentation of youtube-dl options can be found at https://github.com/ytdl-org/youtube-dl&#xA;&#xA;=====&#xA;&#xA;Include &quot;+Folder&quot; to your setting's name in order to use the built-in folders and (optional) password functionality you see in the main form. (for example: MySettings +Folder)&#xA;&#xA;For example...&#xA;Name: &#xA;     Audio +Folder&#xA;Command:&#xA;      youtube-dl --download-archive Downloaded.txt --no-post-overwrites -ciwx --extract-audio --audio-format mp3 -i --prefer-ffmpeg &#xA;&#xA;Would result in the following...&#xA;Full command: &#xA;     youtube-dl --download-archive Downloaded.txt --no-post-overwrites -ciwx --extract-audio --audio-format mp3 -i --prefer-ffmpeg   -o &quot;&lt;FOLDER&gt;\%(title)s.%(ext)s&quot; &lt;URL&gt;&#xA;&#xA;=====&#xA;&#xA;Setting names that exclude &quot;+Folder&quot; means the command will be ran as-is with nothing appended.&#xA;" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>

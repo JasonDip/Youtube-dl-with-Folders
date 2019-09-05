@@ -1,0 +1,17 @@
+﻿<Window x:Class="DownloaderApp.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DownloaderApp"
+        mc:Ignorable="d"
+        Title="About" Height="450" Width="400" FontFamily="Arial" WindowStartupLocation="CenterScreen" MinWidth="400" MinHeight="450">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnUpdateYoutubedl" Content="Update youtube-dl" HorizontalAlignment="Right" Height="27" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="115" Click="btnUpdateYoutubedl_Click"/>
+        <TextBox Margin="10,10,10,42" TextWrapping="Wrap" Text="Youtube-dl with Folders v0.1&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;&#xA;&#xA;&#xA;youtube-dl &#xD;&#xA;    https://ytdl-org.github.io/youtube-dl&#xA;&#xA;FFmpeg &#xD;&#xA;    https://www.ffmpeg.org/&#xA;&#xD;&#xA;Supported Websites &#xD;&#xA;    https://ytdl-org.github.io/youtube-dl/supportedsites.html" TextChanged="TextBox_TextChanged" IsReadOnly="True"/>
+
+    </Grid>
+</Window>
