@@ -11,7 +11,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Button x:Name="btnUpdateYoutubedl" Content="Update youtube-dl" HorizontalAlignment="Right" Height="27" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="115" Click="btnUpdateYoutubedl_Click"/>
-        <TextBox Margin="10,10,10,42" TextWrapping="Wrap" Text="Youtube-dl with Folders v0.1&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;&#xA;&#xA;&#xA;youtube-dl &#xD;&#xA;    https://ytdl-org.github.io/youtube-dl&#xA;&#xA;FFmpeg &#xD;&#xA;    https://www.ffmpeg.org/&#xA;&#xD;&#xA;Supported Websites &#xD;&#xA;    https://ytdl-org.github.io/youtube-dl/supportedsites.html" TextChanged="TextBox_TextChanged" IsReadOnly="True"/>
+        <TextBox Margin="10,10,10,42" TextWrapping="Wrap" Text="&#xD;&#xA;&#xD;&#xA;Youtube-dl with Folders v0.1&#xA;&#xD;&#xA;&#xA;===&#xD;&#xA;&#xD;&#xA;&#xA;Youtube-dl with Folders&#xA;    https://github.com/JasonDip/Youtube-dl-with-Folders&#xA;&#xA;youtube-dl &#xA;    https://ytdl-org.github.io/youtube-dl&#xA;&#xA;FFmpeg &#xA;    https://www.ffmpeg.org/&#xA;&#xA;Supported Websites &#xA;    https://ytdl-org.github.io/youtube-dl/supportedsites.html" TextChanged="TextBox_TextChanged" IsReadOnly="True" TextAlignment="Center"/>
 
     </Grid>
 </Window>
