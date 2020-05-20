@@ -1,8 +1,13 @@
 # Youtube-dl with Folders
 
-A youtube-dl GUI featuring the ability to save folders and download options. Written in C# with .NET Framework and Windows Presentation Foundation (WPF).
+A youtube-dl GUI featuring the ability to save folders and download options.
 
 ![](Demo.gif)
+
+# Built With
+
+-   C#.NET Framework
+-   Windows Presentation Foundation (WPF)
 
 # Setup
 
