@@ -8,6 +8,7 @@ A youtube-dl GUI featuring the ability to save folders and download options.
 
 -   C#.NET Framework
 -   Windows Presentation Foundation (WPF)
+-   youtube-dl
 
 # Setup
 
